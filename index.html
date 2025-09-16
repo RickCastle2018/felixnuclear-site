@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>felixnuclear</title>
+    <link rel="canonical" href="https://felixnuclear.com/" />
+    <meta name="description" content="This is the end of crypto. Join us or stand back and watch how this all ends." />
+    <meta name="theme-color" content="#0b0b0b" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="felixnuclear" />
+    <meta property="og:title" content="felixnuclear — this is the end of crypto" />
+    <meta property="og:description" content="This is the end of crypto. Join us or stand back and watch how this all ends." />
+    <meta property="og:url" content="https://felixnuclear.com/" />
+    <meta property="og:image" content="https://felixnuclear.com/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="felixnuclear — this is the end of crypto" />
+    <meta name="twitter:description" content="This is the end of crypto. Join us or stand back and watch how this all ends." />
+    <meta name="twitter:image" content="https://felixnuclear.com/og.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/config.js"></script>
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="brand">felixnuclear</div>
+    </header>
+
+    <main class="hero" id="top">
+      <div class="hero__content">
+        <h1 class="headline">
+          <span class="headline__accent">This is the end of crypto.</span>
+          <span class="headline__secondary">Join us or stand back and watch how this all ends</span>
+        </h1>
+        <div class="cta">
+          <button id="register-btn" class="btn btn--primary" aria-haspopup="dialog" aria-controls="interest-modal">
+            register your interest
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-copy">
+        If you have a problem with any protocol, you’ve been scammed by a founder, or just hate the tatooted idiots boasting how they made money from some scalping - you belong here
+        <a class="ambiguous" href="https://en.m.wikipedia.org/wiki/SEC_v._Goldman_Sachs_ABACUS/" rel="noopener" target="_blank" aria-label="link">…</a>
+      </p>
+    </footer>
+
+    <dialog id="interest-modal" class="modal" aria-label="Register your interest">
+      <form method="dialog" class="modal__card" id="interest-form" novalidate>
+        <button type="button" class="modal__close" aria-label="Close" value="cancel">✕</button>
+        <h2 class="modal__title">Register your interest</h2>
+        <div class="field">
+          <input
+            type="email"
+            id="email"
+            class="input"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+        <div class="actions">
+          <button id="notify-btn" class="btn btn--primary" value="submit">Notify me</button>
+          <a id="mailto-link" class="btn btn--ghost" href="#" target="_blank" rel="noopener">via email</a>
+        </div>
+        <p class="hint">We’ll ping your mail app if you prefer.</p>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
