@@ -257,8 +257,12 @@ body {
     font-weight: 600;
     text-transform: lowercase;
     letter-spacing: 0.3px;
-    transition: transform 150ms ease, background 150ms ease, color 150ms ease,
-        box-shadow 150ms ease, border-color 150ms ease;
+    transition:
+        transform 150ms ease,
+        background 150ms ease,
+        color 150ms ease,
+        box-shadow 150ms ease,
+        border-color 150ms ease;
 }
 .social__link:hover {
     transform: translateY(-1px);
@@ -302,7 +306,7 @@ body {
 }
 
 .modal__card {
-    width: min(92vw, 520px);
+    width: min(80vw, 320px);
     background: color-mix(in oklab, #ffffff 4%, var(--bg));
     border: 1px solid color-mix(in oklab, #ffffff 12%, transparent);
     border-radius: var(--radius);
@@ -324,10 +328,6 @@ body {
 .modal .btn--primary {
     background: linear-gradient(92deg, var(--nuke), var(--accent-2));
     color: #0b0b0b;
-}
-.modal__title::before {
-    content: "";
-    font-size: 18px;
 }
 .modal__close {
     position: absolute;
