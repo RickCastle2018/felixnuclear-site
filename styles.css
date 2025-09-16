@@ -236,6 +236,47 @@ body {
     color: #e8e8e8;
     border-bottom-color: #e8e8e8;
 }
+/* Social links */
+.social {
+    max-width: 980px;
+    margin: 12px auto 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.social__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: color-mix(in oklab, #ffffff 6%, transparent);
+    border: 1px solid color-mix(in oklab, #ffffff 16%, transparent);
+    color: #e8e8e8;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+    transition: transform 150ms ease, background 150ms ease, color 150ms ease,
+        box-shadow 150ms ease, border-color 150ms ease;
+}
+.social__link:hover {
+    transform: translateY(-1px);
+    background: linear-gradient(
+        92deg,
+        color-mix(in oklab, #ffffff 8%, transparent),
+        color-mix(in oklab, var(--accent-2) 10%, transparent)
+    );
+    color: #ffffff;
+    border-color: color-mix(in oklab, #ffffff 26%, transparent);
+    box-shadow:
+        0 10px 32px rgba(255, 212, 0, 0.12),
+        0 8px 28px rgba(0, 255, 224, 0.16);
+}
+.social__link:focus-visible {
+    outline: none;
+    box-shadow: var(--ring);
+}
 
 /* Modal */
 .modal::backdrop {
